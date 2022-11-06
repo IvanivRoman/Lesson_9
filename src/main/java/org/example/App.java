@@ -8,6 +8,18 @@ public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        Stack stack = new Stack(5);
+
+        stack.push(1);
+        stack.push(2);
+        stack.push(3);
+
+        System.out.print("Stack: ");
+        stack.printStack();
+
+        // remove element from stack
+        stack.pop();
+        System.out.println("\nAfter popping out");
+        stack.printStack();
     }
 }
